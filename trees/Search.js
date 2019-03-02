@@ -1,37 +1,31 @@
-// Breath First Search
+/* 
+Implement in-order, pre-order, post-order, and breadth first search of a tree.
 
-//      1
-//    /   \
-//   2      3
-//  / \   /  \
-// 4  5   6   7
+Use this tree for testing:
+            1
+         /     \
+       2       3
+    /  \      /    \
+   4   5     6   7
+*/
 
-// define the node
 function Node(value) {
-    this.data = value;
-    this.left = null;
-    this.right = null;
+  this.data = value;
+  this.left = null;
+  this.right = null;
 }
 
-// create the nodes
 let node1 = new Node(1);
-console.log("node 1 = ",node1);
 let node2 = new Node(2);
-console.log("node 2 = ", node2);
 let node3 = new Node(3);
-console.log("node 3 = ", node3);
 let node4 = new Node(4);
-console.log("node 4 = ", node4);
 let node5 = new Node(5);
-console.log("node 5 = ", node5);
 let node6 = new Node(6);
-console.log("node 6 = ", node6);
 let node7 = new Node(7);
-console.log("node 7 = ", node7);
+
 
 let rootNode = node1;
 
-// link nodes together
 node1.left = node2;
 node1.right = node3;
 
@@ -41,78 +35,76 @@ node2.right = node5;
 node3.left = node6;
 node3.right = node7;
 
-
-
-// left, root, right
 function inOrder(node) {
-    if(node) {
-        // visit left subtree
-        inOrder(node.left);
-
-        // visit current node;
-        console.log("inOrder = ", node.data);
-
-        // visit right node / subtree
-        inOrder(node.right);
-    }
+  if (!node) return;
+  inOrder(node.left); // left
+  console.log(node.data); // root
+  inOrder(node.right); // right
 }
 
-console.log(inOrder(rootNode));
 
-console.log("----");
-
-// root, left, right
-function preOrder(node) {
-    if(node) {
-
-        // visit current node;
-        console.log("preOrder =", node.data);
-
-        // visit left subtree
-        preOrder(node.left);
-
-        // visit right node / subtree
-        preOrder(node.right);
-    }
-}
-
-console.log(preOrder(rootNode));
-
-console.log("----");
-
-// left, right, root
 function postOrder(node) {
-    if(node){
-        // visit left subtree
-        postOrder(node.left);
-
-        // visit right node / subtree
-        postOrder(node.right);
-
-        // visit current node
-        console.log("postOrder =", node.data);
-    }
+  if (!node) return;
+  postOrder(node.left); // left
+  postOrder(node.right); // right
+  console.log(node.data); // root
 }
 
-console.log(postOrder(rootNode));
+function preOrder(node) {
+  if (!node) return;
+  console.log(node.data); // root
+  preOrder(node.left); // left
+  preOrder(node.right); // right
+}
 
-console.log("----");
+/*
+function bfs(node, queue = []) {
+  if (!node) return;
+  console.log("queue = ", queue);
+  queue.push(node.data);
+  bfs(node.left, queue);
+  bfs(node.right, queue);
+};
 
-function BFS(node) {
+function bfs(node, queue = []) {
+  if (!node) return;
+  console.log("Traversal = ", node.data);
+  queue = queue.concat(node.left || node.right); 
+  return bfs(queue.shift(), queue);
+};
 
+
+*/ 
+
+const bfs = (node, queue = [], currNode = null) => {
+  if (!node) return;
+  queue.push(node.data);
+  console.log(node.data);
+  
+};
+
+/* JACK'S SOLUTION
+
+function bfs(node) {
     let queue = [],
-        currentNode = null;
+         currentNode = null;
 
-        queue.push(node);
+  queue.push(node);
+  
+  while (queue.length) {
+    currentNode = queue.shift();
+    
+      console.log(currentNode.data);
+      
+     if (currentNode.left) queue.push(currentNode.left);
+     if (currentNode.right) queue.push(currentNode.right);
+    }
+  }
 
-        while(queue.length) {
-            currentNode = queue.shift();
+*/
 
-            console.log("Breath-First Search = ", currentNode.data);
+console.log(inOrder(rootNode));    //4, 2, 5,1, 6, 3, 7
+console.log(preOrder(rootNode));
+console.log(postOrder(rootNode));
+console.log(bfs(rootNode));
 
-            if (currentNode.left)queue.push(currentNode.left);
-            if (currentNode.right)queue.push(currentNode.right);
-        }
-}
-
-console.log(BFS(rootNode));
