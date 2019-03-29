@@ -39,7 +39,7 @@ const solution = (str, i = str.length - 1, newStr = '') => {
 // JACK'S SOLUTION
 function reverseString(str) {
    if (str == 0) {
-       return str;
+       return "";
    } else {
        return str[str.length - 1] + reverseString(str.substring(0,str.length - 1))
    }
