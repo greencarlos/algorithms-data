@@ -1,3 +1,23 @@
+function Queue() {
+  let storage = [];
+  this.enqueue = function(element){
+    storage.push(element)
+  }
+  this.dequeue = function(){
+    return storage.shift() || null;
+  }
+}
+
+
+let queue = new Queue();
+queue.enqueue(1);
+queue.enqueue(2);
+queue.enqueue(3)
+console.log(queue.dequeue()) // 1
+console.log(queue.dequeue()) // 2
+
+
+/*
 // implement a queue using linkedLists
 var LinkedList = require('.../linkedList/LinkedList').LinkedList;
 
@@ -51,4 +71,4 @@ console.log(q.peek(), 'b');
 console.log(q.remove(), 'b');
 console.log(q.remove(), 'c');
 console.log(q.isEmpty(), true);
-
+*/

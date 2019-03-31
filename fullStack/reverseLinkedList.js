@@ -24,35 +24,37 @@ nodeC.next = nodeD;
 
 let root = nodeA;
 
+
 const solution = (node) => {
   if (!node) return
   solution(node.next)
   console.log(node.data)
 }
 /*
-
 const solution = (node) => {
   for (key in node) {
     console.log(node[key])
   }
-} */
+}
+*/
 
 console.log(solution(nodeA))
 
-const reverse = (node) => {
+/* const reverse = (node) => {
   let stack = []
 
   while(node !== null) {
   stack.push(node.data)
   }
-  while(!stack) {
-  console.log(stack.pop())
+  //while(!stack) {
+  //console.log(stack.pop())
   }
-}
+} */
 
-console.log(reverse(nodeA))
+// console.log(reverse(nodeA))
 
-/*Given the mock data above, the output will look like this:
+/*
+Given the mock data above, the output will look like this:
 D
 C
 B
