@@ -79,11 +79,12 @@ function bfs(node, queue = []) {
 const bfs = (node, queue = [], currNode = null) => {
   if (!node) return;
   queue.push(node.data);
+  currNode = queue.shift()
   console.log(node.data);
   
 };
 
-/* JACK'S SOLUTION
+// JACK'S SOLUTION
 
 function bfs(node) {
     let queue = [],
@@ -101,7 +102,6 @@ function bfs(node) {
     }
   }
 
-*/
 
 console.log(inOrder(rootNode));    //4, 2, 5,1, 6, 3, 7
 console.log(preOrder(rootNode));
