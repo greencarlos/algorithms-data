@@ -76,13 +76,12 @@ function bfs(node, queue = []) {
 
 */ 
 
-const bfs = (node, queue = [], currNode = null) => {
+/*const bfs = (node, queue = [], currNode = null) => {
   if (!node) return;
   queue.push(node.data);
   currNode = queue.shift()
   console.log(node.data);
-  
-};
+}; */
 
 // JACK'S SOLUTION
 
