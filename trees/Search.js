@@ -23,7 +23,6 @@ let node5 = new Node(5);
 let node6 = new Node(6);
 let node7 = new Node(7);
 
-
 let rootNode = node1;
 
 node1.left = node2;
@@ -42,7 +41,6 @@ function inOrder(node) {
   inOrder(node.right); // right
 }
 
-
 function postOrder(node) {
   if (!node) return;
   postOrder(node.left); // left
@@ -57,34 +55,8 @@ function preOrder(node) {
   preOrder(node.right); // right
 }
 
-/*
-function bfs(node, queue = []) {
-  if (!node) return;
-  console.log("queue = ", queue);
-  queue.push(node.data);
-  bfs(node.left, queue);
-  bfs(node.right, queue);
-};
-
-function bfs(node, queue = []) {
-  if (!node) return;
-  console.log("Traversal = ", node.data);
-  queue = queue.concat(node.left || node.right); 
-  return bfs(queue.shift(), queue);
-};
-
-
-*/ 
-
-/*const bfs = (node, queue = [], currNode = null) => {
-  if (!node) return;
-  queue.push(node.data);
-  currNode = queue.shift()
-  console.log(node.data);
-}; */
 
 // JACK'S SOLUTION
-
 function bfs(node) {
     let queue = [],
          currentNode = null;
@@ -101,9 +73,8 @@ function bfs(node) {
     }
   }
 
-
-console.log(inOrder(rootNode));    //4, 2, 5,1, 6, 3, 7
-console.log(preOrder(rootNode));
-console.log(postOrder(rootNode));
-console.log(bfs(rootNode));
+console.log(inOrder(node1), "inOrder");    //4, 2, 5,1, 6, 3, 7
+console.log(preOrder(node1), "preOrder");
+console.log(postOrder(node1), "postOrder");
+console.log(bfs(node1), "bfs");
 
