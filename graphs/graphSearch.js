@@ -67,7 +67,7 @@ function graphDfs(node) {
 
 }
 
-console.log(dfs(tree));
+//console.log(graphDfs(tree));
 
 
 //      EXAMPLE 2
@@ -163,3 +163,4 @@ function generateNeighbors(word, alphabet, toBeVisited) {
 console.log(findShortestWordLadderDistance("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"])); // 5
 
 console.log(findShortestWordLadderDistance("hit", "cog", ["hot", "dot", "dog", "lot", "log"])); // -1
+
