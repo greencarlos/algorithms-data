@@ -28,9 +28,7 @@ function swap(input, index_A, index_B) {
 }
 
 function heapSort(input) {
-
   array_length = input.length
-
 
   for (var i = Math.floor(array_length / 2); i >= 0; i--) {
     heap_root(input, i)
@@ -44,7 +42,19 @@ function heapSort(input) {
   return input
 }
 
-var arr = [3, 0, 2, 5, -1, 4, 1]
-console.log('original arr', arr)
-console.log(heapSort(arr))
+var arr1 = [3, 0, 2, 5, -1, 4, 1]
+console.log('arr1 ', arr1)
+console.log(heapSort(arr1), 'heap 1 sorted')
 
+// Binary Max-Heap
+/*      (30)
+ *      /  \
+ *   (20)  (10)
+ *   /  \  /
+ * (7) (9)(5)
+*/
+const arr2 = [30, 20, 10, 7, 9, 5]
+//     index: 0,  1,  2,  3, 4, 5     
+console.log(" ")
+console.log('arr2 ', arr2)
+console.log(heapSort(arr2), 'heap 2 sorted')
