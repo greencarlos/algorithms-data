@@ -1,4 +1,5 @@
 // https://www.w3resource.com/javascript-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-2.php
+// ***Two Sorted Arrays***
 
 function merge_sort(left_part, right_part) {
   var i = 0
