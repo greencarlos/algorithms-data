@@ -2,11 +2,11 @@
 Implement in-order, pre-order, post-order, and breadth first search of a tree.
 
 Use this tree for testing:
-            1
-         /     \
-       2       3
-    /  \      /    \
-   4   5     6   7
+        1
+      /  \
+     2    3
+    / \  / \
+   4  5 6   7
 */
 
 function Node(value) {
@@ -55,8 +55,7 @@ function preOrder(node) {
   preOrder(node.right); // right
 }
 
-
-// JACK'S SOLUTION
+// Breath First Traversal/Search
 function bfs(node) {
     let queue = [],
          currentNode = null;
