@@ -1,7 +1,7 @@
 const arr = [-1, 0, 3, 5, 9, 12]
 // sorted array
 
-var search = function(nums, target) {
+var BinarySearch = function(nums, target) {
   let left = 0
   let right = nums.length-1;
 
@@ -18,6 +18,6 @@ var search = function(nums, target) {
   return -1 
 };
 
-console.log(search(arr, 9), 4)
-console.log(search(arr, 2), -1)
+console.log(BinarySearch(arr, 9), 4)
+console.log(BinarySearch(arr, 2), -1)
 
