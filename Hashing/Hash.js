@@ -17,6 +17,20 @@ const hash = {}
 const hashMap = new Map()
 // proper hashmap in javascript
 
+const arr = [1, 2, 3, 4, 5, 5, 5, 5]
 
+for (let i = 0; i < arr.length; i++) {
+  // Object
+  hash[arr[i]] = (hash[arr[i]] || 0) + 1
+
+  // Map
+  if (hashMap.has(arr[i])) {
+    hashMap.set(arr[i], (hashMap.get(arr[i]))+1)
+  } else {
+    hashMap.set(arr[i], 1)
+  }
+}
+
+console.log(arr, 'original')
 console.log(hash, 'hash')
 console.log(hashMap, 'hashMap')
