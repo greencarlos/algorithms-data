@@ -30,10 +30,6 @@ We need to use radius 1 standard, then all the houses can be warmed.
 */
 
 var findRadius = function(houses, heaters) {
-  let count = 0
-  for (let i = 0; i < houses.length; i++) {
-    if (heaters[i] )
-  }
 };
 
 const arr1 = [1,2,3]
