@@ -14,7 +14,13 @@ Output: 4
 **/
 
 var singleNumber = function(nums) {
-  return nums.reduce((prev, curr) => prev ^ curr, 0)
+  nums.sort((a, b) => a - b)
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] !== nums[i + 1]) {
+      return nums[i]
+    }
+    i++
+  }
 };
 
 const arr1 = [2,2,1]
