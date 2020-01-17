@@ -24,7 +24,6 @@ c.next = d
 var deleteNode = function(node) {
   node.val = node.next.val
   node.next = node.next.next
-  return node
 };
 
 console.log(deleteNode(a, 5), "4->5->1->9")
