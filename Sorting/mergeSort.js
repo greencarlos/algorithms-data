@@ -1,3 +1,6 @@
+// https://www.w3resource.com/javascript-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-2.php
+// ***Two Sorted Arrays***
+
 const merge = (left, right) => {
   const sorted = [];
   while (left && left.length > 0 && right && right.length > 0) {
@@ -22,3 +25,6 @@ const mergeSort = arr => {
 
 const arr = [234, 526, 6, 3, 2, 5];
 console.log(mergeSort(arr));
+
+console.log(mergeSort([1, 3, 4], [3, 7, 9]))
+console.log(mergeSort([10, 30, 44], [32, 79, 91]))

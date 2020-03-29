@@ -45,5 +45,27 @@ function quickSort(items, left, right) {
   return items
 }
 
+const quickSort2 = (array) => {
+  if (array.length <= 1) {
+    return array
+  }
+
+  const pivot = array[0]
+
+  const left = []
+  const right = []
+
+  for (let i = 1; i < array.length; i++) {
+    array[i] < pivot ? left.push(array[i]) : right.push(array[i])
+  }
+
+  return quickSort(left).concat(pivot, quickSort(right))
+}
+
 var sortedArr = quickSort(items, 0, items.length - 1)
-console.log(sortedArr)
+console.log(sortedArr, 'QuickSort 1')
+
+const unsorted = [23, 45, 16, 3, 99, 22];
+const sorted = quickSort2(unsorted)
+console.log('QuickSort 2', sorted)
+

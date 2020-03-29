@@ -1,3 +1,5 @@
+// https://www.w3resource.com/javascript-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-3.php
+
 const heapRoot = (arr, input, i) => {
   let left = 2 * i + 1
   let right = 2 * i + 2
@@ -20,7 +22,7 @@ const swap = (input, indexA, indexB) => {
   const temp = input[indexA]
   input[indexA] = input[indexB]
   input[indexB] = temp
-} 
+}
 
 const heapSort = (input, arrLen) =>  {
   console.log('origin', input)
@@ -40,5 +42,19 @@ const heapSort = (input, arrLen) =>  {
   return input
 }
 
-const arr = [3, 0, 2, 5, 4, 1]
-console.log(heapSort(arr))
+const arr1 = [3, 0, 2, 5, -1, 4, 1]
+console.log('arr1 ', arr1)
+console.log(heapSort(arr1), 'heap 1 sorted')
+
+// Binary Max-Heap
+/*      (30)
+ *      /  \
+ *   (20)  (10)
+ *   /  \  /
+ * (7) (9)(5)
+*/
+const arr2 = [30, 20, 10, 7, 9, 5]
+//     index: 0,  1,  2,  3, 4, 5     
+console.log(" ")
+console.log('arr2 ', arr2)
+console.log(heapSort(arr2), 'heap 2 sorted')
