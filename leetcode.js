@@ -1,33 +1,29 @@
-var numTeams = function(rating) {
-  const result = []
-
-  for (let i = 0; i < rating.length; i++) {
-    for (let j = i + 1; j < rating.length; j++) {
-      for (k = j + 1; k < rating.length; k++) {
-        if (rating[i] < rating[j] < rating[k] || 
-          rating[i] > rating[j] > rating[k]) {
-          result.push([rating[i], rating[j], rating[k]])
-        }
-      }
-    }
-  }
-
-  console.log(result, 'result')
-  return result.length 
-};
-
 /*
-Choose 3 soldiers with index (i, j, k) with rating (rating[i], rating[j], rating[k]).
-
-A team is valid if:  
-(rating[i] < rating[j] < rating[k]) or 
-(rating[i] > rating[j] > rating[k]) where (0 <= i < j < k < n).
+Input: 19
+Output: true
+Explanation: 
+12 + 92 = 82
+82 + 22 = 68
+62 + 82 = 100
+12 + 02 + 02 = 1
 */
 
-const rating1 = [2,5,3,4,1]
-const rating2 = [2,1,3]
-const rating3 = [1,2,3,4]
+var isHappy = function(n, cache = new Set(), sum = 1, res) {
+  const sumArr = n.toString().split('');
 
-console.log(numTeams(rating1), 3)
-console.log(numTeams(rating2), 0)
-console.log(numTeams(rating3), 4)
+  for (let i = 0; i < sumArr.length; i++) {
+    sum += sumArr[i] * sumArr[i];
+  }
+
+  if (cache.has(sum)) {
+    res= sum === 1;
+  } else {
+    cache.add(sum);
+    isHappy(sum, cache, 1);
+  }
+  console.log(sum, 'sum');
+  return res
+};
+
+console.log(isHappy(19), true);
+console.log(isHappy(2), false);
