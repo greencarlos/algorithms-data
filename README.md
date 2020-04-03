@@ -1,4 +1,5 @@
-LeetCode 
+LeetCode | https://leetcode.com/ 
+HackerRank | https://duckduckgo.com/?q=hackerrank&t=brave&ia=web
 
 30 mins - 1 hour max per question
 
