@@ -1,68 +1,46 @@
-function TreeNode(val) {
-  this.val = val;
-  this.left = null;
-  this.right = null;
-}
+// Brute Force
 
-/*
+// Turn both strings into arrays
+// Iterate the first one
+// if you hit a # splice it and the previous element
 
-    (3)
-    / \
-  (9) (20)
-      /  \
-    (15) (7)
-*/
+// join the strings 
+// repeat for the second array
+// check if they match
 
-const three = new TreeNode(3)
-const nine = new TreeNode(9)
-const twenty = new TreeNode(20)
-const fifteen = new TreeNode(15)
-const seven = new TreeNode(7)
-
-three.left = nine
-three.right = twenty
-
-twenty.left = fifteen
-twenty.right = seven
-
-console.log(three, 'three')
-
-/*
-    (1)
-    / \
-  (2)  (3)
- /  \  /  \
-(4)(5)(6) (7)
-*/
-
-const one2 = new TreeNode(1)
-const two2 = new TreeNode(2)
-const three2 = new TreeNode(3)
-const four2 = new TreeNode(4)
-const five2 = new TreeNode(5)
-const six2 = new TreeNode(6)
-const seven2 = new TreeNode(7)
-
-one2.left = two2
-one2.right = three2
-
-two2.left = four2
-two2.right = five2
-
-three2.left = six2
-three2.right = seven2
-
-console.log(one2, 'one')
-
-/**
-BFS
-
-
-**/
-var verticalTraversal = function(root) {
-  return -1
+var backspaceCompare = function(A, B) {
+  let gen = (str, s=[]) => {
+    str.split('').forEach(c => {
+      if (c !== '#') 
+        s.push(c)
+      else if (c === '#')
+        s.pop()
+    })
+    return s.join('')
+  }
+  return gen(A) === gen(B)
 };
 
-console.log(verticalTraversal(three))
-console.log(verticalTraversal(one2))
+const S1 = "ab#c"
+const T1 = "ad#c"
 
+const S2 = "ab##"
+const T2 = "c#d#"
+
+const S3 = "a##c"
+const T3 = "#a#c"
+
+const S4 = "a#c"
+const T4 = "b"
+
+console.log(backspaceCompare(S1, T1), true)
+// Explanation: Both S and T become "ac".
+
+console.log(backspaceCompare(S2, T2), true)
+// Explanation: Both S and T become "".
+
+console.log(backspaceCompare(S3, T3), true)
+// Explanation: Both S and T become "c".
+
+console.log(backspaceCompare(S4, T4), false)
+// Explanation: S becomes "c" while T becomes "b".
