@@ -1,0 +1,15 @@
+{
+  "name": "lc-leftmost-col-with-at-least-a-one",
+  "version": "1.0.0",
+  "description": "URL: https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/530/week-3/3306/",
+  "main": "binary-matrix.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest.js --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^25.4.0"
+  },
+  "keywords": []
+}
