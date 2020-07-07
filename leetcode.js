@@ -1,25 +1,18 @@
 /**
- * @param {string} S
- * @return {string}
+ * @param {number[]} digits
+ * @return {number[]}
  */
-
-var toGoatLatin = function(S) {
-  const vowel = ['a', 'e', 'i', 'o', 'u']
-  let arr = S.split(' ')
-
-  for (let i = 0; i < arr.length; i++) {
-    let word = arr[i]
-    if (vowel.indexOf(word[0].toLowerCase()) > -1) {
-      word += 'ma'
-    } else {
-      word += word[0]
-      word = word.slice(1) + 'ma'
-    }
-    for (let j = 0; j <= i; j++) {
-      word += 'a'
-    }
-    arr[i] = word
-  }
-
-  return arr.join(' ')
+var plusOne = function(digits) {
+    
 };
+
+const input1 = [1,2,3]
+const output1 = [1,2,4]
+console.log(plusOne(input1), output1)
+// Explanation: The array represents the integer 123.
+
+
+const input2 = [4,3,2,1]
+const output2 = [4,3,2,2]
+console.log(plusOne(input2), output2)
+// Explanation: The array represents the integer 4321.
