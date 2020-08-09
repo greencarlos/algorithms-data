@@ -109,11 +109,6 @@ for each recursive call.
 
 // Recursive Brute Force
 // Time O(m*n) Space [Excluding Recursion] O(1)
-/*
-Runtime: 4852 ms, faster than 5.01% of JavaScript online submissions for Intersection of Two Linked Lists.
-Memory Usage: 50.5 MB, less than 5.07% of JavaScript online submissions for Intersection of Two Linked Lists.
-*/
-
 var getIntersectionNode = function(nodeA, nodeB) {
   if (!nodeA || !nodeB) return null
 
@@ -133,11 +128,6 @@ var getIntersectionNode = function(nodeA, nodeB) {
 
 // Iterative Brute Force
 // Time O(m*n) Space O(1)
-/*
-Runtime: 1784 ms, faster than 5.01% of JavaScript online submissions for Intersection of Two Linked Lists.
-Memory Usage: 43.4 MB, less than 50.82% of JavaScript online submissions for Intersection of Two Linked Lists.
-*/
-
 var getIntersectionNode = function(nodeA, nodeB) {
   if (!nodeA || !nodeB) return null
   let n1 = nodeA
@@ -157,11 +147,6 @@ var getIntersectionNode = function(nodeA, nodeB) {
 
 // Recursive Hash Table
 // Time & Space O(n)
-/* 
-Runtime: 116 ms, faster than 33.27% of JavaScript online submissions for Intersection of Two Linked Lists.
-Memory Usage: 44.7 MB, less than 11.63% of JavaScript online submissions for Intersection of Two Linked Lists.
-*/
-
 var getIntersectionNode = function(nodeA, nodeB, hashSet = new Set()) {
   if (!nodeA || !nodeB) return null
 
@@ -186,11 +171,6 @@ var getIntersectionNode = function(nodeA, nodeB, hashSet = new Set()) {
 
 // Iterative Hash Table
 // Time & Space O(n)
-/*
-Runtime: 108 ms, faster than 40.07% of JavaScript online submissions for Intersection of Two Linked Lists.
-Memory Usage: 44.3 MB, less than 14.90% of JavaScript online submissions for Intersection of Two Linked Lists.
-*/
-
 var getIntersectionNode = function(nodeA, nodeB, hashSet = new Set()) {
   if (!nodeA || !nodeB) return null
   let n1 = nodeA
@@ -213,11 +193,6 @@ var getIntersectionNode = function(nodeA, nodeB, hashSet = new Set()) {
 
 // Recursive Two Pointers
 // Time O(n) & Space [Excluding Recursion] O(1)
-/*
-Runtime: 116 ms, faster than 33.27% of JavaScript online submissions for Intersection of Two Linked Lists.
-Memory Usage: 45.1 MB, less than 7.01% of JavaScript online submissions for Intersection of Two Linked Lists.
-*/
-
 var getIntersectionNode = function(nodeA, nodeB) {
   if (!nodeA || !nodeB) return null
 
@@ -240,11 +215,6 @@ var getIntersectionNode = function(nodeA, nodeB) {
 
 // Iterative Two Pointers
 // Time O(n) & Space O(1)
-/*
-Runtime: 112 ms, faster than 35.06% of JavaScript online submissions for Intersection of Two Linked Lists.
-Memory Usage: 43.8 MB, less than 21.46% of JavaScript online submissions for Intersection of Two Linked Lists.
-*/
-
 var getIntersectionNode = function(nodeA, nodeB) {
   if (!nodeA || !nodeB) return null;
   let n1 = nodeA;

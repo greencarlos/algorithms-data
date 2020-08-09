@@ -1,0 +1,23 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "LeetCode | https://leetcode.com/  HackerRank | https://duckduckgo.com/?q=hackerrank&t=brave&ia=web",
+  "main": "leetcode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greenc123/algorithms-data.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greenc123/algorithms-data/issues"
+  },
+  "homepage": "https://github.com/greenc123/algorithms-data#readme",
+  "dependencies": {
+    "typescript": "^3.9.7"
+  }
+}
