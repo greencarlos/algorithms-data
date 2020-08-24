@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/implement-trie-prefix-tree/
 //
 function Trie() {
-  const root = {}
+  root = {}
   return {insert, search, startsWith}
 
   function insert(word) {
@@ -20,7 +20,7 @@ function Trie() {
   }
 
   function search(word) {
-    let node = traverse(word)'
+    let node = traverse(word)
     return !!node && !!node.isWord;
   }
 
@@ -28,3 +28,9 @@ function Trie() {
     return !!traverse(word)
   }
 }
+
+const trie = new Trie()
+trie.insert('hello')
+trie.insert('hell')
+trie.insert('hallow')
+console.log(trie)
