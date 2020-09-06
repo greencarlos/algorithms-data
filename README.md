@@ -1,5 +1,6 @@
 LeetCode | https://leetcode.com/ 
 HackerRank | https://duckduckgo.com/?q=hackerrank&t=brave&ia=web
+Pramp | https://pramp.com
 
 30 mins - 1 hour max per question
 
@@ -8,14 +9,6 @@ HackerRank | https://duckduckgo.com/?q=hackerrank&t=brave&ia=web
 3. 	Time & Space O(n)
 4.	Write the code
 5.	Test
-
-Saturday White Boarding
-North Side Santa Clara library
-10:00 AM to 12:00 / 1:00 PM
-
-Sunday White Boarding 
-…
-
 
 — Data Structures —
 Linked Lists | https://www.notion.so/LinkedIist-771b5847f6564ec39a4dad74f389e3bc
@@ -146,72 +139,13 @@ https://www.youtube.com/watch?v=Aa2sqUhIn-E&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2
 35. Approximation Algorithms
 
 
-O’rielly Algorithms & Data | page (89 of 246)
-1. Javascript
-2. Arrays
-3. Lists
-4. Stacks
-Javascript Call Stack
-https://www.htmlgoodies.com/primers/jsp/article.php/3622321
-5. Queues & Priority Queues
-6. Linked Lists
-7. Dictionaires
-8. Hashing
-9. Sets
-10. Binary Trees and Binary Search Trees
-11. Graphs
-12. Sorting
-13. Searching
-14. Dynamic/Greedy Programming
-
-
-Elements of Programming Interviews | page (0 of 739)
-1. Introduction to Algorithm Design
-2. Algorithm Analysis
-3. Data Structures
-4. Sorting and Searching
-5. Graph Traversal
-6. Weighted Graphs
-7. Heuristic Methods
-8. Dynamic Programming
-9. Approximation Algorithms
-10. How to design algorithms
-11. Catalog of algorithms
-12. Data Structures
-13. Numerical Problems
-14. Combinatorial Problems
-15. Graph Problems
-16. Hard Graph Problems
-17. Computational Geometry
-18. Set and Strings
-
-
-Learning Javascript Algorithms and Data Structures | pages (0 of 566)
-1. Javascript
-2. ECMAScript and Typescript
-3. Arrays
-4. Stacks
-5. Queues and Deques
-6. Linked Lists
-7. Sets
-8. Dictionaries and Hashes
-9. Recursion
-10. Trees
-11. Binary Heap and HeapSort
-12. Graphs
-13. Sorting and Searching
-14. Designs and Techniques
-15. Time Complexity
-
 TriplyByte (Notion)
 https://www.notion.so/TripleByte-and-Concepts-6e2f7ade2d4c4a36b383d1faa34c5414
 
 TripleByte
 https://triplebyte.com/candidates/tracks
 
-Programming Pearls 2nd Edition (page 1 of 283)
-
-Stanford Algorithms (24 of 170)
+Stanford Algorithms 
 https://www.youtube.com/watch?v=yRM3sc57q0c&list=PLEAYkSg4uSQ37A6_NrUnTHEKp6EkAxTMa
 
 Udacity Algorithms
@@ -226,21 +160,18 @@ https://www.youtube.com/watch?v=12u3R2UCer4&list=PLEVDNf7p-wYyh712BgmW9UGrAc88bl
 Harvard Algorithms
 https://www.youtube.com/watch?v=0JUN9aDxVmI&list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf
 
-CoderPro (32 / 108)
-https://www.techseries.dev/library
+Tech Interview Pro 
+CoderPro 
 Email: ejukeaban@gmail.com
 Password: newpass415
-
-Tech Interview Pro (1 / 17)
-CoderPro (1 / 108)
 https://www.techseries.dev/library
-Email: ejukeaban@gmail.com
-Password: newpass415  Leetcode Solutions (1 / 187)
 https://www.youtube.com/watch?v=U6-X_QOwPcs&list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp-
 
-Nick White (1 / 187)
+Nick White 
 https://www.youtube.com/watch?v=U6-X_QOwPcs&list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp-  Javascript Playlist ( 1 / 74)
 https://www.youtube.com/watch?v=U8B984M1VcU&list=PLko32sysgiEPGS4bXBRyZMo9ztcHmPI1z
+
+Kevin Naughton | https://www.youtube.com/watchv=o8S2bO3pmO4&list=PLi9RQVmJD2fYXgBAUfaN5MXgYPUTbzqeb
 
 Facebook Top 75 Questions to review (1 / 75)
 https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
@@ -252,6 +183,3 @@ FullStack Builder Problem set (1 / 109)
 https://fullstackbuilder.teachable.com/p/online-programming-interview-prep-program
 Email: zonxa14gmail.com
 Password: #FullStack2020
-
-Cracking the Coding Interview
-
