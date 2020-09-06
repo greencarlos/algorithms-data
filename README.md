@@ -1,5 +1,5 @@
 LeetCode | https://leetcode.com/ 
-HackerRank | https://duckduckgo.com/?q=hackerrank&t=brave&ia=web
+HackerRank | https://www.hackerrank.com
 Pramp | https://pramp.com
 
 30 mins - 1 hour max per question
