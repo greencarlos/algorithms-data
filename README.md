@@ -2,6 +2,8 @@ LeetCode | https://leetcode.com/
 HackerRank | https://www.hackerrank.com
 Pramp | https://pramp.com
 
+# Hacktoberfest!!!
+
 30 mins - 1 hour max per question
 
 1.	Examples
