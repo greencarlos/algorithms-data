@@ -1,0 +1,59 @@
+<table class="container"></table>
+
+<body>
+  <script>
+    /*
+Google Phone Screen 10.01.10
+
+Create a table that prints:
+1	8	9	16	17
+2	7	10	15	18
+3	6	11	14	19
+4	5	12	13	20
+
+		*/
+    const container = document.querySelector('.container');
+
+    const createGrid = (row, col) => {
+      let count = 1;
+      const grid = Array(row) // create an array of row length
+        .fill(null) // fill it with null values
+        .map(x => Array(col)); // map over it and create arrays of col length
+
+      while (count <= row * col) {
+        for (let j = 0; j < col; j++) {
+          // iterate the cols
+          for (let i = 0; i < row; i++) {
+            // go down
+            grid[i][j] = count;
+            count += 1;
+          }
+
+          j += 1; // move the cols over
+
+          for (let i = row - 1; i >= 0; i--) {
+            // go back up
+            grid[i][j] = count;
+            count += 1;
+          }
+        }
+      }
+
+      return grid; // return the array of arrays
+    };
+
+    const matrix = createGrid(4, 5);
+    console.log('matrix', matrix);
+
+    for (let i = 0; i < matrix.length; i++) {
+      const htmlRow = document.createElement('tr');
+      htmlRow.classList.add('row');
+
+      for (let j = 0; j < matrix[0].length - 1; j++) {
+        console.log(matrix[i][j]);
+        htmlRow.innerHTML += `<td>${matrix[i][j]}</td>`;
+      }
+      container.append(htmlRow);
+    }
+  </script>
+</body>
