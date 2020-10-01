@@ -1,4 +1,5 @@
-// Failed Facebook Interview 07.07.20
+// Failed Facebook Phone Screen 07.07.20
+// https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 
 // Binary tree. Node has one integer
 // Two methods
@@ -17,7 +18,7 @@
 //     9   7  8   null
 
 function Node(val, left, right){
-  this.val = val
+  this.val = val ? val : 0
   this.left = left ? left : null;
   this.right = right ? right : null
 }

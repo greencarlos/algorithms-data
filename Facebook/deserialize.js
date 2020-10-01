@@ -1,9 +1,8 @@
 function TreeNode(val, left, right) {
   this.val = val;
-  this.left = left ? left : null; 
-  this.right = right ? right : null; 
+  this.left = left ? left : null;
+  this.right = right ? right : null;
 }
-
 /*
 Binary tree. Node has one integer
 Two methods
@@ -58,63 +57,61 @@ result = '1 4 null 8 null null 3 9 null null -10 null null'
 
 */
 
+const ten = new TreeNode(-10);
+const nine = new TreeNode(9);
+const eight = new TreeNode(8);
 
-const ten = new TreeNode(-10)
-const nine = new TreeNode(9)
-const eight = new TreeNode(8)
-
-const three = new TreeNode(3, nine, ten)
-const four = new TreeNode(4, null, eight)
-const one = new TreeNode(1, four, three)
+const three = new TreeNode(3, nine, ten);
+const four = new TreeNode(4, null, eight);
+const one = new TreeNode(1, four, three);
 
 /**
  * Encodes a tree to a single string.
  * @param {TreeNode} root
  * @return {string}
-**/
+ **/
 
-var serialize = function(root, res=[]) {
-  const preorder = (node) => {
+var serialize = function(root, res = []) {
+  const preorder = node => {
     if (!node) {
-      res.push(null)
-      return 
+      res.push(null);
+      return;
     }
+    res.push(node.val);
+    preorder(node.left);
+    preorder(node.right);
+  };
 
-    res.push(node.val)
-    preorder(node.left)
-    preorder(node.right)
-  }
-
-  preorder(root)
-  return res 
+  preorder(root);
+  return res;
 };
 
-const treeString = serialize(one)
+const treeString = serialize(one);
 
-console.log(treeString)
-console.log('1 4 null 8 null null 3 9 null null -10 null null')
-console.log(" ")
+console.log(treeString);
+console.log('1 4 null 8 null null 3 9 null null -10 null null');
+console.log(' ');
 
 /**
  * Decodes your encoded data to tree.
  * @param {string} data
  * @return {TreeNode}
-**/
+ **/
 
 var deserialize = function(data = []) {
-  let val = data.shift()
-  if (val == null) return null
-  let node = new TreeNode(val)
-  node.left = deserialize(data)
-  node.right = deserialize(data)
-  return node
+  let val = data.shift();
+  if (val == null) return null;
+  let node = new TreeNode(val);
+  node.left = deserialize(data);
+  node.right = deserialize(data);
+  return node;
 };
 
 /**
  * Your functions will be called as such:
  * deserialize(serialize(root));
-**/
+ **/
 
-const binaryTree = deserialize(serialize(one))
-console.log('deserialized', binaryTree)
-console.log(one)
+const binaryTree = deserialize(serialize(one));
+console.log('deserialized', binaryTree);
+console.log(one);
