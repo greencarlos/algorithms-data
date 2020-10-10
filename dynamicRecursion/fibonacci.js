@@ -1,109 +1,53 @@
-// O(n^2)
-// Brute Force
-// Recursion
-const fib = n => {
-  if (n <= 1) return n;
-  return fib(n - 1) + fib(n - 2);
-};
+/*
+Recursion and Dynamic Programming (4 steps)
 
-var fib = function(n) {
-  if (n < 2) return n;
-  return fib(n - 1) + fib(n - 2);
-};
+1. Start with the recursive backtracking solution
+2. Optimize by using a memoization table (top-down dynamic programming)
+3. Remove the need for recursion (bottom-up dynamic programming)
+4. Apply final tricks to reduce the time / memory complexity
+*/
 
-fib = memo(fib);
 
-function memo(fn) {
-  let cache = {};
-  return function(...args) {
-    if (cache[args]) {
-      return cache[args];
-    }
-    const result = fn(...args);
-    cache[args] = result;
-    return result;
-  };
+// Time & Space O(n!)
+const fibo = n => {
+  if (n === 0) return 0
+  if (n === 1) return 1
+  return fibo(n - 1) + fibo(n - 2)
 }
 
-// O(n)
-// Memoization
-// Iterate
-const fibo = (n, f = []) => {
-  f[0] = 0;
-  f[1] = 1;
+console.log(fibo(2))
+console.log(fibo(3))
+console.log(fibo(5))
+console.log(fibo(9))
+console.log(fibo(10))
+console.log('--recursion--')
 
-  for (i = 2; i <= n; i++) {
-    f[i] = f[i - 1] + f[i - 2];
-  }
-  return f[n];
-};
-
-// for loop iteration
-const ForFib = function(n) {
-  if (n < 2) return [1];
-  const seq = [1, 1];
-
-  for (let i = 2; i < n; i++) {
-    let first = seq[seq.length - 1];
-    let second = seq[seq.length - 2];
-    let sum = first + second;
-    seq.push(sum);
-  }
-  return seq;
-};
-
-// while loop iteration
-const WhileFib = function(n) {
-  if (n < 2) return [1];
-  const seq = [1, 1];
-
-  let i = 2;
-  while (i < n) {
-    let first = seq[seq.length - 1];
-    let second = seq[seq.length - 2];
-    let sum = first + second;
-    seq.push(sum);
-    i++;
-  }
-  return seq;
-};
-
-// Javascript Implementation
-/**
- * Avoid 53-bit limit of JS’s default number
- * Type. This fib(79) is 14472334024676221n
- * Not 14472334024676220
- **/
-function JSFib(n) {
-  let [a, b] = [0, 1];
-  for (let i = 0; i < n; i++) {
-    [a, b] = [b, a + b];
-  }
-  return a;
+// Time & Space O(n) Top Down
+const fiboMemo = (n, i=2, memo = [0, 1]) => {
+  memo[i] = memo[i - 1] + memo[i - 2]
+  if (i === n) return memo[n]
+  return fiboMemo(n, i+1, memo) 
 }
 
-console.log(fib(1), 1);
-console.log(fib(5), 5);
-console.log(fib(10), 10);
-console.log(' ');
-console.log(fibo(1), 1);
-console.log(fibo(5), 5);
-console.log(fibo(10), 10);
-console.log(' ');
-console.log('--ForFib---');
-console.log(' ');
-console.log(ForFib(1), 'ForFib');
-console.log(ForFib(5), 'ForFib');
-console.log(ForFib(10), 'ForFib');
-console.log(' ');
-console.log('--WhileFib---');
-console.log(' ');
-console.log(WhileFib(1), 'WhileFib');
-console.log(WhileFib(5), 'WhileFib');
-console.log(WhileFib(10), 'WhileFib');
-console.log(' ');
-console.log('--JSFib--');
-console.log(' ');
-console.log(JSFib(1), 'JSFib');
-console.log(JSFib(5), 'JSFib');
-console.log(JSFib(10), 'JSFib');
+console.log(fiboMemo(2))
+console.log(fiboMemo(3))
+console.log(fiboMemo(5))
+console.log(fiboMemo(9))
+console.log(fiboMemo(10))
+console.log('--memoization--')
+
+// Time & Space O(n) Bottom Up
+const fiboDP = (n, memo=[0,1]) => {
+  for (let i = 2; i <= n; i++) {
+    memo[i] = memo[i - 1] + memo[i - 2]
+  }
+
+  return memo[n]
+}
+
+console.log(fiboDP(2))
+console.log(fiboDP(3))
+console.log(fiboDP(5))
+console.log(fiboDP(9))
+console.log(fiboDP(10))
+console.log('--dynamic programming--')
