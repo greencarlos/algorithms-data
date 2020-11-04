@@ -27,7 +27,7 @@ console.log(pancakeSort(arr1))
 console.log(out1)
 
 /*
-Time O(n), Space O(1)
+Time O(n^2), Space O(1)
 
  0, 1, 2, 3, 4 index
 [1, 5, 4, 3, 2] elements

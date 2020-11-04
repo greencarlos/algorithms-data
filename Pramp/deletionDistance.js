@@ -1,24 +1,30 @@
 function deletionDistance(str1, str2) {
-  const hash = {}
-  let count = 0
+  let str1Len = str1.length
+  let str2Len = str2.length
 
-  for (let i = 0; i < str1.length; i++) {
-    hash[str1[i]] = (hash[str1[i]] || 0) + 1
-  }
+  const memo = new Array(str1Len + 1)
+    .fill([]).map(x => new Array(str2Len + 1))
 
-  for (let i = 0; i < str2.length; i++) {
-    if (!hash[str2[i]]) {
-      count += 1
-    } else if (hash[str2[i]] < -1) {
-      count += 1
-    } else {
-      hash[str2[i]]--
+  for (let i = 0; i < str1Len; i++) {
+    for (let j = 0; j < str2Len; j++) {
+      if (i === 0) {
+        memo[i][j] = j
+      } else if (j === 0) {
+        memo[i][j] = i
+      } else if (str1[i-1] == str2[j - 1]) {
+        memo[i][j] = memo[i - 1][j - 1]
+      } else {
+        memo[i][j] = 1 + Math.min(
+          memo[i-1][j], 
+          memo[i][j-1]
+        )
+      }
     }
   }
 
-  return count 
+  console.log('memo', memo)
+  return memo[str1Len][str2Len]
 }
-
 
 const str1 = "dog"
 const str2 = "frog"
