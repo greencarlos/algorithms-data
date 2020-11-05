@@ -3,10 +3,10 @@ function deletionDistance(str1, str2) {
   let str2Len = str2.length
 
   const memo = new Array(str1Len + 1)
-    .fill([]).map(x => new Array(str2Len + 1))
-
-  for (let i = 0; i < str1Len; i++) {
-    for (let j = 0; j < str2Len; j++) {
+    .fill([]).map(x => new Array(str2Len + 1).fill(0))
+  
+  for (let i = 0; i <= str1Len; i++) {
+    for (let j = 0; j <= str2Len; j++) {
       if (i === 0) {
         memo[i][j] = j
       } else if (j === 0) {
@@ -22,9 +22,10 @@ function deletionDistance(str1, str2) {
     }
   }
 
-  console.log('memo', memo)
   return memo[str1Len][str2Len]
 }
+
+
 
 const str1 = "dog"
 const str2 = "frog"
