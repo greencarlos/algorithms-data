@@ -1,56 +1,129 @@
-LeetCode | https://leetcode.com/ 
-HackerRank | https://www.hackerrank.com
-Pramp | https://pramp.com
+Algorithms
+https://exercism.io/
+https://leetcode.com/
+https://coderbyte.com
 
-## Hacktoberfest!!
+https://www.spoj.com/
+https://projecteuler.net/
+https://www.topcoder.com/  https://www.codechef.com/
+https://www.codewars.com/
+https://www.hackerrank.com/
 
-30 mins - 1 hour max per question
+https://www.khanacademy.org/
+=> zonxa14@gmail.com
+=> 8NRgpgA64N01wftR
 
-1.	Examples
-2.	Talk about what is going on
-3. 	Time & Space O(n)
-4.	Write the code
-5.	Test
+Every day is day one.
+10 mins Easy
+20 mins Medium
+30 mins Hard
+
+CTCI problem solving
+1. Read / Listen / Ask clarifying questions
+2. Examples / Corner Cases
+3. Talk about what is going on 
+4. Brute Force (Time/Space O(n))
+5. Optimized / Steps (Time/Space O(n))
+6. Write the code / Test
+
+Mock Interviews | https://pramp.com  Pramp Hard Mode | https://aol.yahoo.com/
+- Albertoe 4:30PM Mon - Fri
+- CTCI 8.02 Dynamic Programming
+- Eloquent JS 4.4
+- Algorithm Design Manual 1.1
+ USPS can come for an interview at 1245 Hammerwood Avenue, Sunnyvale CA 94089 during the below timeslots:
+3. 11/05/20 @ 9 AM & 1 PM
+
+
+Outlook
+=> Starts Thu, Nov 5, 2020 10:00 AM
+=> Ends Fri, Nov 6, 2020, 12:00 PM
+OUT OF PRAMP ALGORITHMS
+
+ProtonMail
+=> Starts  Fri, Nov 6, 2020, 2:00 PM
+OUT OF PRAMP ALGORITHMS
+
+Yahoo
+=> Starts Fri, Nov 6, 2020, 6:00PM
+OUT OF PRAMP ALGORITHMS
+
+
+
+—- Algorithm Books —-
+
+- Computer Science Distilled
+
+- Programming Interviews Exposed
+- Programming Pearls 2nd Edition
+- Elements of programming interviews in C++
+
+- Algorithm design by Jon Klienberg and Eva Tardos
+- Introduction to Algorithms and Programming I
+- Data Structures and Algorithms made easy by Narasimha
+
+- Designing data intensive applications 
+- Head first Design patterns
+- Clean Architecture
+
+- Competitive Programmer’s Handbook
+- Code, The hidden language of Computer Hardware and Software
+- Working effectively with Legacy Code by Michael C. Feathers
+
+- Neo4j_Graph_Algorithms_r3.pdf
+- Graph_Databases_2e_Neo4j.pdf
+- Knuth 1, Knuth 2, Knuth 3, Knuth 4
+
+Should be Google ready after these books. 
+Unless my ambition changes.
+
 
 — Data Structures —
+
 Linked Lists | https://www.notion.so/LinkedIist-771b5847f6564ec39a4dad74f389e3bc
 Trees & Graphs | 
 Tries | https://leetcode.com/problems/implement-trie-prefix-tree/
 Stack (Palindromes) & Queues | 
 Heaps (Priority Queues) | https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/MIT6_006F11_lec04.pdf
-Vectors / ArrayLists | 
+Vectors or Arrays or Lists | 
 Hash Tables | https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/MIT6_006F11_lec08_orig.pdf
 
+
 — Algorithms —
+
 Breath-First Search | https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/MIT6_006F11_lec13_orig.pdf
 Depth-First Search | https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/MIT6_006F11_lec14_orig.pdf
 Binary Search | https://leetcode.com/problems/binary-search/
+QuickSort | http://timroughgarden.org/w11/l/qsort.pdf
 Merge Sort | https://leetcode.com/problems/merge-sorted-array/
-Quick, Counting, Heap Sort | https://leetcode.com/problems/sort-an-array/submissions/
 Insertion Sort, Merge Sort | https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/MIT6_006F11_lec03.pdf
+Sorting | https://leetcode.com/problems/sort-an-array/submissions/
 
 
 — Concepts—
+
 Bit Manipulation | https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
 Memory (Stack vs. Heap)
-Recursion
-Dynamic Programming
-- I Fibonacci, shortest paths https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/MIT6_006F11_lec19_orig.pdf
-- II Text justification, blackjack https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/MIT6_006F11_lec20_orig.pdf
-- III Parenthesization, edit distance, knapsack https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/MIT6_006F11_lec21_orig.pdf
-- IV Guitar fingering, Tetris, Super Mario Bros. https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/MIT6_006F11_lec22_orig.pdf
+Greedy Algorithms
+Recursion and Dynamic Programming (4 steps)
+1. Start with the recursive backtracking solution (Brute Force)
+2. Optimize by using a memoization table (top-down dynamic programming)
+3. Remove the need for recursion (bottom-up dynamic programming)
+4. Apply final tricks to reduce the time / memory complexity
 
 Big O Time and Space (Scalability)
-- Linear O(n)
 - Constant O(1)
-- Logarithmic O(log(n))
-- Superlinear O(n*log(n))
-- Quadratic or Cubic / Polynomial O(n2) or O(n3)
+- Logarithmic O(log n)
+- Linear O(n)
+- Superlinear O(n*log n)
+- Quadratic  O(n2)
+-  Cubic O(n3)
+- Polynomial O(n^k), k > 1
 - Exponential O(2n)
-- Factorial O(n!)
+- Factorial O(n!) or O(a^n), a > 1 
 
+— Coding Interview Patterns —
 
-— Patterns —
 https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 1. Sliding Window
 2. Two Pointers or Iterators
@@ -69,6 +142,7 @@ https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357
 
 
 — Mathematics —
+
 Mean | The value obtained by dividing the sum of Several qualities by their number; an average;
 [1, 2, 3, 4, 5] Mean is 3
 1 + 2 + 3 + 4 + 5 = 15
@@ -82,106 +156,93 @@ Mode | Most frequent element.
 
 
 
-Cracking the Coding Interview
-https://www.youtube.com/watch?v=v4cd1O4zkGw&list=PLX6IKgS15Ue02WDPRCmYKuZicQHit9kFt
 
-VI. Time Space Complexity
-1. Arrays and Strings
-2. Linked Lists
-3. Stacks and Queues
-4. Trees and Graphs
-5. Bit Manipulation
-6. Math and Logic Puzzles
-7. Object-Oriented Design
-8. Recursion and Dynamic Programming
-9. System Design and Scalability
-10. Sorting and Searching
-11. Testing
+— TODO —
+
+Kevin Naughton | https://www.youtube.com/watchv=o8S2bO3pmO4&list=PLi9RQVmJD2fYXgBAUfaN5MXgYPUTbzqeb
 
 
-MIT Introduction to Algorithms 6.006
-https://www.youtube.com/watch?v=Aa2sqUhIn-E&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=16&t=3s
+Nick White Leetcode
+https://www.youtube.com/watch?v=U6-X_QOwPcs&list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp- 
 
-- Polynomial Time is Great
-- Exponential Time is bad
-- Infinite Time gets you fired
-
-3. Time Space Complexity
-4. Divide-And-Conquer
-5. Probabilistic Analysis and Randomized Algorithms
-6. HeapSort
-7. QuickSort
-8. Sorting in Linear Time
-9. Medians and Order Statistics
-10. Elementary Data Structures
-11. Hash Tables
-12. Binary Search Trees
-13. Red-Black Trees
-14. Augmenting Data Structures
-15. Dynamic Programming
-16. Greedy Algorithms
-17. Amortized Analysis
-18. B-Trees
-19. Fibonacci Heaps
-20. Van Emde Boas Trees
-21. Disjont Sets
-22. Elementary Graph Algorithms
-23. Minimum Spanning Trees
-24. Single-Source Shortest Paths
-25. All-Pairs Shortest Paths
-26. Maximum Flow
-27. Multithreaded Algorithms
-28. Matrix Operations
-29. Linear Programming
-30. Polynomial and the FFT
-31. Number-Theoretic Algorithms
-32. String Matching
-33. Computation Geometry
-34. NP-Completenness
-35. Approximation Algorithms
+Facebook Top 75 Questions
+https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
 
 
-TriplyByte (Notion)
-https://www.notion.so/TripleByte-and-Concepts-6e2f7ade2d4c4a36b383d1faa34c5414
 
-TripleByte
-https://triplebyte.com/candidates/tracks
+
+
+
+— 1 Hour Lectures —
+
+MIT 6.006 Introduction to Algorithms | https://www.youtube.com/watch?v=Aa2sqUhIn-E&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=16&t=3s
+
+UC Davis Algorithm Complexity | https://www.youtube.com/watch?v=kqt-mfcm-FM&list=PL6EF0274BD849A7D5
+
+MIT 6.046 Design and Analysis of Algorithms | https://www.youtube.com/watch?v=2P-yW7LQr08&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp
+
+Harvard Advanced Algorithms | https://www.youtube.com/watch?v=0JUN9aDxVmI&list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf
+
+MIT 6.854 Advanced Algorithms | https://www.youtube.com/watch?v=hM547xRIdzc&list=PL6ogFv-ieghdoGKGg2Bik3Gl1glBTEu8c
+
+MIT 6.851 Advanced Data Structures | https://www.youtube.com/watch?v=T0yzrZL1py0&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf
+
+
+
+
+
+— 10 min mobile / lunch videos —
 
 Stanford Algorithms 
 https://www.youtube.com/watch?v=yRM3sc57q0c&list=PLEAYkSg4uSQ37A6_NrUnTHEKp6EkAxTMa
 
-Udacity Algorithms
-https://www.youtube.com/watch?v=JtzIGTXesrE&list=PLAwxTw4SYaPk0SXKi0ARnhK5zhZcA4yDU
+Cracking the Coding Interview | https://www.youtube.com/watch?v=v4cd1O4zkGw&list=PLX6IKgS15Ue02WDPRCmYKuZicQHit9kFt
 
-UC Davis Algorithms
-https://www.youtube.com/watch?v=kqt-mfcm-FM&list=PL6EF0274BD849A7D5
+Interview Recordings (9 / 68)
+https://m.youtube.com/watch?v=Q5_2BCej9hg&list=PLm6XThSMgu_FHBBDnWKj8E2PNocdMw_yD&index=9
 
-GATE Algorithms
-https://www.youtube.com/watch?v=12u3R2UCer4&list=PLEVDNf7p-wYyh712BgmW9UGrAc88bl3OF
 
-Harvard Algorithms
-https://www.youtube.com/watch?v=0JUN9aDxVmI&list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf
+Udacity Algorithms 22/300 | https://www.youtube.com/watch?v=JtzIGTXesrE&list=PLAwxTw4SYaPk0SXKi0ARnhK5zhZcA4yDU
 
-Tech Interview Pro 
-CoderPro 
+GATE Algorithms | https://www.youtube.com/watch?v=12u3R2UCer4&list=PLEVDNf7p-wYyh712BgmW9UGrAc88bl3OF
+
+Jenny’s Lectures | https://m.youtube.com/watch?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU&time_continue=2&v=AT14lCXuMKI&feature=emb_title
+
+
+
+
+— LeetCode problem sets —
+
+Tech Interview Pro | CoderPro
+ https://www.techseries.dev/library
 Email: ejukeaban@gmail.com
 Password: newpass415
-https://www.techseries.dev/library
-https://www.youtube.com/watch?v=U6-X_QOwPcs&list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp-
 
-Nick White 
-https://www.youtube.com/watch?v=U6-X_QOwPcs&list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp-  Javascript Playlist ( 1 / 74)
+Javascript LeetCode Playlist 
 https://www.youtube.com/watch?v=U8B984M1VcU&list=PLko32sysgiEPGS4bXBRyZMo9ztcHmPI1z
 
-Kevin Naughton | https://www.youtube.com/watchv=o8S2bO3pmO4&list=PLi9RQVmJD2fYXgBAUfaN5MXgYPUTbzqeb
-
-Facebook Top 75 Questions to review (1 / 75)
-https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
-
-LeetCode Interview Questions (1 / 111)
+Kevin Naughton LeetCode
 https://www.youtube.com/watch?v=o8S2bO3pmO4&list=PLi9RQVmJD2fYXgBAUfaN5MXgYPUTbzqeb
 
-FullStack Builder Problem set (1 / 109)
+Nick White LeetCode
+https://www.youtube.com/watch?v=U6-X_QOwPcs&list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp-  Suyash Tiwari LeetCode https://www.youtube.com/watch?v=_ByHjOGOjOE&list=PLmf9Saw8so0VpNyuO9bAj3VGJNkJ6CLkj
+
+Facebook Top 75 Questions to review 
+https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
+
+FullStack Builder Problem set
 https://fullstackbuilder.teachable.com/p/online-programming-interview-prep-program
 Email: zonxa14gmail.com
 Password: #FullStack2020
+
+
+TripleByte | https://triplebyte.com/candidates/tracks
+
+
+Interview.io Mock Interviews | https://m.youtube.com/watch?v=aotBpjJUqJo&list=PLm6XThSMgu_FHBBDnWKj8E2PNocdMw_yD&index=2
+
+
+
+Tim RoughGarden | http://timroughgarden.org/
+
+Steven Skiena | https://www3.cs.stonybrook.edu/~skiena/combinatorica/
