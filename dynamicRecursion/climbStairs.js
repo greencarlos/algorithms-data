@@ -19,11 +19,13 @@ var climbStairs = function(n) {
 */
 
 // Time & Space O(n) Top Down
+/*
 var climbStairs = function(n, i=3, memo = [0, 1, 2]) {
   if (n < i) return memo[n]
   memo[i] = memo[i - 1] + memo[i - 2]
  return climbStairs(n, i+1, memo)
 }
+*/
 
 /*
 // Time & Space O(n) Bottom Up
@@ -37,6 +39,19 @@ var climbStairs = function(n) {
   return memo[n]
 };
 */
+
+var climbStairs = function(n) {
+  if (n <= 0) return 0
+  let a = 0
+  let b = 1
+
+  for (let i = 2; i <= n; i++) {
+    let c = a + b
+    a = b
+    b = c
+  }
+  return a + b
+}
 
 console.log(climbStairs(2), 2)
 console.log(climbStairs(3), 3)

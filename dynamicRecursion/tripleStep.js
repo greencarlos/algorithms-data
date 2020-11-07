@@ -15,7 +15,7 @@ Implement a method to count how many possible ways
 the child can run up the stairs.
  */
 
-
+/*
 var numWays = function(N) { 
   var answer = 0;
   var recurse = function(number) {
@@ -30,6 +30,7 @@ var numWays = function(N) {
   recurse(N);
   return answer;
 };
+*/
 
 // Recursive BackTracking 
 // Time & Space O(n!)
@@ -69,9 +70,26 @@ var numWays = function(n, memo=[1,1,2,4]) {
 }
 */
 
+var numWays = function(n) {
+  if (n <= 0) return 0
+  if (n === 1) return 1
+  if (n === 2) return 2
+
+  let a = 1
+  let b = 1
+  let c = 2
+
+  for (let i = 3; i < n; i++) {
+    let d = a + b + c
+    a = b
+    b = c
+    c = d
+  }
+  return a + b + c 
+}
+
 
 /* TEST */
-
 console.log(numWays(1), 1);
 console.log(numWays(2), 2);
 console.log(numWays(3), 4);
