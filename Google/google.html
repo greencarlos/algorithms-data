@@ -1,0 +1,69 @@
+<style>
+/*
+Target | red | green | blue
+*/
+
+.row {
+	display: flex;
+	flex-direction: reverse-row;
+	justify-content: space-between;
+}
+.box {
+	height: 150px;
+	width: 150px;
+	border: 1px solid black;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+</style>
+
+	<div class="row">
+		<div class="box target">Target</div>
+		<div class="box red">Red</div>
+		<div class="box blue">Blue</div>
+		<div class="box green">Green</div>
+	</div>
+
+
+<script>
+	const redEle = document.querySelector('.red')
+	const blueEle = document.querySelector('.blue')
+	const greenEle = document.querySelector('.green')
+	const target = document.querySelector('.target')
+
+	const colors = {
+		"red": 0,
+		"blue": 0,
+		"green" : 0
+  }
+
+	const changeColor = addColor => {
+	  for (let key in colors) {
+		  if (key === addColor) {
+			  colors[addColor] = (colors[addColor] + 225) / 2
+				} else {
+				colors[key] = colors[key] /= 2
+			}
+	  }
+
+		target.style.backgroundColor = `rgba(${colors["red"]}, ${colors["green"]}, ${colors["blue"]})`
+	}
+
+
+	redEle.addEventListener('click', () => changeColor("red"))
+	greenEle.addEventListener('click',() => changeColor("green"))
+	blueEle.addEventListener('click', () => changeColor("blue"))
+		
+
+</script>
