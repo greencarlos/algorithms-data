@@ -22,13 +22,14 @@ six.adj.push(six)
 const graphBFS = (root) => {
   let result = []
   let queue = []
-  let currentNode = null
 
   queue.push(root)
-  while(queue.length) {
-    currentNode = queue.shift()
 
-    currentNode.adj.forEach((node) => {
+  while(queue.length) {
+    // solve this portion
+    let current = queue.shift()
+
+    current.adj.forEach((node) => {
       console.log(node.val)
       if (!node.visited) {
         queue.push(node)
