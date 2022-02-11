@@ -163,6 +163,28 @@ const edges = [
   ["o", "n"],
 ];
 
+// Matrix to Adjacency list
+function matrixToAdj(grid) {
+  const graph = {}
+  const row = grid.length
+  const col = grid[0].length
+
+  for (let i = 0; i < row; i++) {
+    for (let j = 0; j < col; j++) {
+      if (!graph[i]) {
+        graph[i] = []
+      } 
+
+      if (grid[i][j] === 1) {
+        graph[i].push(j)
+      }
+    }
+  }
+
+  return graph
+}
+
+
 // Edge list to Adjacency list
 const edgeToAdj = (edges) => {
   const graph = {};
@@ -497,4 +519,3 @@ const minimumIsland = (grid) => {
 console.log(`Minimum Island matrix 3`);
 console.log(minimumIsland(matrix3), 2);
 console.log("-----");
-
