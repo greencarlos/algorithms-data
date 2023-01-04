@@ -13,7 +13,7 @@ https://www.khanacademy.org/
 => zonxa14@gmail.com
 => 8NRgpgA64N01wftR
 
-Every day is day one.
+Every day is day one:  
 10 mins Easy
 20 mins Medium
 30 mins Hard
@@ -26,27 +26,9 @@ CTCI problem solving
 5. Optimized / Steps (Time/Space O(n))
 6. Write the code / Test
 
-Mock Interviews | https://pramp.com  Pramp Hard Mode | https://aol.yahoo.com/
-- Albertoe 4:30PM Mon - Fri
-- CTCI 8.02 Dynamic Programming
-- Eloquent JS 4.4
-- Algorithm Design Manual 1.1
- USPS can come for an interview at 1245 Hammerwood Avenue, Sunnyvale CA 94089 during the below timeslots:
-3. 11/05/20 @ 9 AM & 1 PM
+Mock Interviews | https://pramp.com  
 
 
-Outlook
-=> Starts Thu, Nov 5, 2020 10:00 AM
-=> Ends Fri, Nov 6, 2020, 12:00 PM
-OUT OF PRAMP ALGORITHMS
-
-ProtonMail
-=> Starts  Fri, Nov 6, 2020, 2:00 PM
-OUT OF PRAMP ALGORITHMS
-
-Yahoo
-=> Starts Fri, Nov 6, 2020, 6:00PM
-OUT OF PRAMP ALGORITHMS
 
 
 
@@ -73,9 +55,6 @@ OUT OF PRAMP ALGORITHMS
 - Neo4j_Graph_Algorithms_r3.pdf
 - Graph_Databases_2e_Neo4j.pdf
 - Knuth 1, Knuth 2, Knuth 3, Knuth 4
-
-Should be Google ready after these books. 
-Unless my ambition changes.
 
 
 — Data Structures —
@@ -123,8 +102,8 @@ Big O Time and Space (Scalability)
 - Factorial O(n!) or O(a^n), a > 1 
 
 — Coding Interview Patterns —
-
 https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
+
 1. Sliding Window
 2. Two Pointers or Iterators
 3. Fast and Slow pointers
@@ -157,16 +136,17 @@ Mode | Most frequent element.
 
 
 
-— TODO —
+— Youtube Playlists —
 
-Kevin Naughton | https://www.youtube.com/watchv=o8S2bO3pmO4&list=PLi9RQVmJD2fYXgBAUfaN5MXgYPUTbzqeb
+Kevin Naughton 
+https://www.youtube.com/watchv=o8S2bO3pmO4&list=PLi9RQVmJD2fYXgBAUfaN5MXgYPUTbzqeb
 
+Javascript LeetCode Playlist 
+https://www.youtube.com/watch?v=U8B984M1VcU&list=PLko32sysgiEPGS4bXBRyZMo9ztcHmPI1z
 
 Nick White Leetcode
 https://www.youtube.com/watch?v=U6-X_QOwPcs&list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp- 
 
-Facebook Top 75 Questions
-https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
 
 
 
@@ -175,17 +155,23 @@ https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Q
 
 — 1 Hour Lectures —
 
-MIT 6.006 Introduction to Algorithms | https://www.youtube.com/watch?v=Aa2sqUhIn-E&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=16&t=3s
+MIT 6.006 Introduction to Algorithms 
+https://www.youtube.com/watch?v=Aa2sqUhIn-E&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=16&t=3s
 
-UC Davis Algorithm Complexity | https://www.youtube.com/watch?v=kqt-mfcm-FM&list=PL6EF0274BD849A7D5
+UC Davis Algorithm Complexity 
+https://www.youtube.com/watch?v=kqt-mfcm-FM&list=PL6EF0274BD849A7D5
 
-MIT 6.046 Design and Analysis of Algorithms | https://www.youtube.com/watch?v=2P-yW7LQr08&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp
+MIT 6.046 Design and Analysis of Algorithms 
+https://www.youtube.com/watch?v=2P-yW7LQr08&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp
 
-Harvard Advanced Algorithms | https://www.youtube.com/watch?v=0JUN9aDxVmI&list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf
+Harvard Advanced Algorithms 
+https://www.youtube.com/watch?v=0JUN9aDxVmI&list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf
 
-MIT 6.854 Advanced Algorithms | https://www.youtube.com/watch?v=hM547xRIdzc&list=PL6ogFv-ieghdoGKGg2Bik3Gl1glBTEu8c
+MIT 6.854 Advanced Algorithms 
+https://www.youtube.com/watch?v=hM547xRIdzc&list=PL6ogFv-ieghdoGKGg2Bik3Gl1glBTEu8c
 
-MIT 6.851 Advanced Data Structures | https://www.youtube.com/watch?v=T0yzrZL1py0&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf
+MIT 6.851 Advanced Data Structures 
+https://www.youtube.com/watch?v=T0yzrZL1py0&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf
 
 
 
@@ -196,53 +182,45 @@ MIT 6.851 Advanced Data Structures | https://www.youtube.com/watch?v=T0yzrZL1py0
 Stanford Algorithms 
 https://www.youtube.com/watch?v=yRM3sc57q0c&list=PLEAYkSg4uSQ37A6_NrUnTHEKp6EkAxTMa
 
-Cracking the Coding Interview | https://www.youtube.com/watch?v=v4cd1O4zkGw&list=PLX6IKgS15Ue02WDPRCmYKuZicQHit9kFt
+Cracking the Coding Interview 
+https://www.youtube.com/watch?v=v4cd1O4zkGw&list=PLX6IKgS15Ue02WDPRCmYKuZicQHit9kFt
 
-Interview Recordings (9 / 68)
+Interview Recordings 
 https://m.youtube.com/watch?v=Q5_2BCej9hg&list=PLm6XThSMgu_FHBBDnWKj8E2PNocdMw_yD&index=9
 
+Udacity Algorithms
+https://www.youtube.com/watch?v=JtzIGTXesrE&list=PLAwxTw4SYaPk0SXKi0ARnhK5zhZcA4yDU
 
-Udacity Algorithms 22/300 | https://www.youtube.com/watch?v=JtzIGTXesrE&list=PLAwxTw4SYaPk0SXKi0ARnhK5zhZcA4yDU
+GATE Algorithms 
+https://www.youtube.com/watch?v=12u3R2UCer4&list=PLEVDNf7p-wYyh712BgmW9UGrAc88bl3OF
 
-GATE Algorithms | https://www.youtube.com/watch?v=12u3R2UCer4&list=PLEVDNf7p-wYyh712BgmW9UGrAc88bl3OF
-
-Jenny’s Lectures | https://m.youtube.com/watch?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU&time_continue=2&v=AT14lCXuMKI&feature=emb_title
-
-
+Jenny’s Lectures 
+https://m.youtube.com/watch?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU&time_continue=2&v=AT14lCXuMKI&feature=emb_title
 
 
-— LeetCode problem sets —
+
+
+— Interview Problem Sets —
 
 Tech Interview Pro | CoderPro
- https://www.techseries.dev/library
+https://www.techseries.dev/library
 Email: ejukeaban@gmail.com
 Password: newpass415
 
-Javascript LeetCode Playlist 
-https://www.youtube.com/watch?v=U8B984M1VcU&list=PLko32sysgiEPGS4bXBRyZMo9ztcHmPI1z
-
-Kevin Naughton LeetCode
-https://www.youtube.com/watch?v=o8S2bO3pmO4&list=PLi9RQVmJD2fYXgBAUfaN5MXgYPUTbzqeb
-
-Nick White LeetCode
-https://www.youtube.com/watch?v=U6-X_QOwPcs&list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp-  Suyash Tiwari LeetCode https://www.youtube.com/watch?v=_ByHjOGOjOE&list=PLmf9Saw8so0VpNyuO9bAj3VGJNkJ6CLkj
-
-Facebook Top 75 Questions to review 
-https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
 
 FullStack Builder Problem set
 https://fullstackbuilder.teachable.com/p/online-programming-interview-prep-program
 Email: zonxa14gmail.com
 Password: #FullStack2020
 
+TripleByte 
+https://triplebyte.com/candidates/tracks
 
-TripleByte | https://triplebyte.com/candidates/tracks
+Interview.io Mock Interviews 
+https://m.youtube.com/watch?v=aotBpjJUqJo&list=PLm6XThSMgu_FHBBDnWKj8E2PNocdMw_yD&index=2
+
+Steven Skiena 
+https://www3.cs.stonybrook.edu/~skiena/combinatorica/
 
 
-Interview.io Mock Interviews | https://m.youtube.com/watch?v=aotBpjJUqJo&list=PLm6XThSMgu_FHBBDnWKj8E2PNocdMw_yD&index=2
 
-
-
-Tim RoughGarden | http://timroughgarden.org/
-
-Steven Skiena | https://www3.cs.stonybrook.edu/~skiena/combinatorica/
