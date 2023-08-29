@@ -27,7 +27,6 @@ var climbStairs = function(n, i=3, memo = [0, 1, 2]) {
 }
 */
 
-/*
 // Time & Space O(n) Bottom Up
 var climbStairs = function(n) {
   const memo = Array(n + 1).fill(1)
@@ -36,10 +35,11 @@ var climbStairs = function(n) {
     memo[i] = memo[i - 1] + memo[i - 2]
   }
 
+console.log('memo', memo)
   return memo[n]
 };
-*/
 
+/**
 var climbStairs = function(n) {
   if (n <= 0) return 0
   let a = 0
@@ -52,6 +52,7 @@ var climbStairs = function(n) {
   }
   return a + b
 }
+ **/
 
 console.log(climbStairs(2), 2)
 console.log(climbStairs(3), 3)
